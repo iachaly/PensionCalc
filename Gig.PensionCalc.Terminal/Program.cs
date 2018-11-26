@@ -10,7 +10,18 @@ namespace Gig.PensionCalc.Terminal
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("text");
+            var name = args[0];
+            var age  = int.Parse(args[1]);
+            var isw  = bool.Parse(args[2]);
+            var agep = 65;
+            if (isw) {
+                agep = 63;
+            }
+            var result = string.Format("{0}, тебе работать ещё {1}", 
+                name,
+                (agep-age)
+                );
+            Console.WriteLine(result);
             Console.ReadKey();
         }
     }
