@@ -49,6 +49,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gig.PensionCalc.Business\Gig.PensionCalc.Business.csproj">
+      <Project>{0F925100-F366-41F8-90E0-106F7FFECF16}</Project>
+      <Name>Gig.PensionCalc.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gig.PensionCalc.Domain\Gig.PensionCalc.Domain.csproj">
+      <Project>{40427FF7-35C3-4F7A-A135-433DB3120DE0}</Project>
+      <Name>Gig.PensionCalc.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
